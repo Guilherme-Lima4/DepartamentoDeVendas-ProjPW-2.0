@@ -136,7 +136,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <!--===============================================================================================-->
 	<script src="<?php echo base_url('vendor/countdowntime/countdowntime.js') ?>"></script>
 <!--===============================================================================================-->
-	<script src='js/main.js'>"></script>
+	<script src="<?php echo base_url('https://departamento-de-vendas-v2.herokuapp.com/js/main.js') ?>"></script>
 
 </body>
 </html>
