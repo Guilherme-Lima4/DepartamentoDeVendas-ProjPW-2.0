@@ -136,7 +136,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <!--===============================================================================================-->
 	<script src="<?php echo base_url('vendor/countdowntime/countdowntime.js') ?>"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
