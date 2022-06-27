@@ -122,7 +122,9 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 	<div id="dropDownSelect1"></div>
 	
 <!--===============================================================================================-->
-	<script src='vendor/jquery/jquery-3.2.1.min.js'></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script>window.jQuery || document.write('<script src="vendor/jquery/jquery-3.2.1.min.js"><\/script>')</script>
 <!--===============================================================================================-->
 	<script src='vendor/animsition/js/animsition.min.js'></script>
 <!--===============================================================================================-->
