@@ -1,4 +1,6 @@
 
+app.use(express.static("public"))
+
 (function ($) {
     "use strict";
 
