@@ -13,7 +13,7 @@ include('protect.php');
     <meta name="description" content="">
     <title>Home Vendedor</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="homeVendedor.css" media="screen">
+    <link rel="stylesheet" href="homeVendedor.css" media="screen">
     <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.12.14, nicepage.com">
