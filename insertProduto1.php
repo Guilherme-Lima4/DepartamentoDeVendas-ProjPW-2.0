@@ -12,9 +12,9 @@ if(isset($_POST['robo'])){
     $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
     
     if (mysqli_query($conn, $sql_code)) {
-        echo "<script type='javascript'>alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'')</script>";
+        echo "<script type='javascript'>alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'')
+        window.location.href='notasFiscais.html'</script>";
         
-        header("Location: notasFiscais.html");
     } else {
         die("Erro ao comprar produto! " . mysqli_error($conn));        
     }
