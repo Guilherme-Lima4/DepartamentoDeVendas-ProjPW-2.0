@@ -11,12 +11,12 @@ if(isset($_POST['robo'])){
     $valorProduto = 2.555;
     $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
     
-    if (!mysqli_query($conn, $sql_code)) {
-        die("Erro ao comprar produto! " . mysqli_error($conn));
-    } else {
+    if (mysqli_query($conn, $sql_code)) {
         echo "<script type='javascript'>alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'');";
-        header("Location: notasFiscais.html");
         
+        header("Location: notasFiscais.html");
+    } else {
+        die("Erro ao comprar produto! " . mysqli_error($conn));        
     }
 
 } else if(isset($_POST['cafeteira'])){
