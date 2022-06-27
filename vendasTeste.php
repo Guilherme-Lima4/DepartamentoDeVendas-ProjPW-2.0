@@ -1,3 +1,10 @@
+<?php
+
+include('protect.php');
+include('conexaoLoginCliente.php');
+
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -55,7 +62,7 @@
         <div class="u-expanded-width u-table u-table-responsive u-table-1">
         <?php 
         header("Content-type: text/html; charset=utf-8");
-        include_once "conexaoLoginCliente.php";
+        
 
         echo "<center><table class='tableVendas' center border= 0px>";
         echo "<tr>";
