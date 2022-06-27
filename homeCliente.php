@@ -10,15 +10,15 @@ include('protect.php');
     <meta charset="utf-8">
     <meta name="keywords" content="​Embalagens referência no mercado!, Entregas mais rápidas, ​Entregas simples, rápidas e práticas, Acompanhe suas vendas, Acompanhe sua Região de Atuação, Visualizar veículos disponíveis">
     <meta name="description" content="">
-    <title>homeCliente</title>
+    <title>Home Cliente</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="homeCliente.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.12.14, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     
-    
+    <link rel="icon" type="image/png" href="images/icons/faviconn.ico"/>
     
     
     
@@ -35,7 +35,7 @@ include('protect.php');
   <body class="u-body u-xl-mode">
     <section class="u-clearfix u-grey-75 u-header u-header" id="sec-9b3c">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
+        <a href="homeCliente.php" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
           <img src="images/PortaldoCliente2.png" class="u-logo-image u-logo-image-1">
         </a>
         <div class="u-list u-list-1">
@@ -47,12 +47,12 @@ include('protect.php');
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
-                <a href="notasFiscais.html" data-page-id="606009561" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2">Notas fiscais</a>
+                <a href="notasFiscais.php" data-page-id="606009561" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2">Notas fiscais</a>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
-                <a href="https://nicepage.com/c/pricing-html-templates" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">Informaçoes pessoais</a>    
+                <a href="perfil.php" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">Informaçoes pessoais</a>    
               </div>
               <br>
               <br>
@@ -202,25 +202,25 @@ include('protect.php');
     <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-2" id="carousel_081b">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-1">Visualize os produtos disponíveis</h2>
-        <a href="https://nicepage.com/c/slider-html-templates" class="u-active-black u-black u-border-1 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-70 u-radius-50 u-text-active-black u-text-hover-black u-text-palette-4-base u-btn-1">visualizar produtos</a>
+        <a href="Produtos.php" class="u-active-black u-black u-border-1 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-70 u-radius-50 u-text-active-black u-text-hover-black u-text-palette-4-base u-btn-1">visualizar produtos</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-3" id="carousel_0d83">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-1">Acompanhe suas compras através das notas fiscais</h2>
-        <a href="https://nicepage.com/c/slider-html-templates" class="u-active-black u-black u-border-1 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-70 u-radius-50 u-text-active-black u-text-hover-black u-text-palette-4-base u-btn-1">visualizar notas fiscais</a>
+        <a href="notasFiscais.php" class="u-active-black u-black u-border-1 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-70 u-radius-50 u-text-active-black u-text-hover-black u-text-palette-4-base u-btn-1">visualizar notas fiscais</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-4" id="carousel_2dc1">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-1">Visualize suas informações pessoais</h2>
-        <a href="https://nicepage.com/c/slider-html-templates" class="u-active-black u-black u-border-1 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-70 u-radius-50 u-text-active-black u-text-hover-black u-text-palette-4-base u-btn-1">visualizar peril</a>
+        <a href="perfil.php" class="u-active-black u-black u-border-1 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-hover-grey-70 u-radius-50 u-text-active-black u-text-hover-black u-text-palette-4-base u-btn-1">visualizar peril</a>
       </div>
     </section>
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-278a"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1"> FastDelivery© 2022&nbsp;<a href="index-4.html" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Privacy Policy</a>
+        <p class="u-small-text u-text u-text-variant u-text-1"> FastDelivery© 2022&nbsp;<a href="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Privacy Policy</a>
         </p>
       </div></footer>
   </body>

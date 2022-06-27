@@ -11,10 +11,7 @@ if(isset($_POST['robo'])){
     $valorProduto = 2.555;
     $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
     
-    if (mysqli_query($conn, $sql_code)) {
-        #echo "<script type='javascript'>alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página Notas fiscais')
-        #window.location.href='notasFiscais.html'</script>";
-        
+    if (mysqli_query($conn, $sql_code)) { 
        echo "<script type='text/javascript'>
                 alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página Notas fiscais');
                 location.replace('homeCliente.php');
@@ -33,11 +30,12 @@ if(isset($_POST['robo'])){
     $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
 
     if (!mysqli_query($conn, $sql_code)) {
-        die("Erro ao comprar produto! " . mysqli_error($conn));
+        echo "<script type='text/javascript'>
+                alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página Notas fiscais');
+                location.replace('homeCliente.php');
+             </script>";
     } else {
-        echo "<script language='javascript' type='text/javascript'>
-    alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'')
-    window.location.href='homeCliente.php'</script>";
+        die("Erro ao comprar produto! " . mysqli_error($conn));
     }
 
 } else if(isset($_POST['oculos'])){
@@ -50,11 +48,12 @@ if(isset($_POST['robo'])){
     $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
 
     if (!mysqli_query($conn, $sql_code)) {
-        die("Erro ao comprar produto! " . mysqli_error($conn));
+        echo "<script type='text/javascript'>
+                alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página Notas fiscais');
+                location.replace('homeCliente.php');
+             </script>";
     } else {
-        echo "<script language='javascript' type='text/javascript'>
-    alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'')
-    window.location.href='homeCliente.php'</script>";
+        die("Erro ao comprar produto! " . mysqli_error($conn));
     }
 }
 
