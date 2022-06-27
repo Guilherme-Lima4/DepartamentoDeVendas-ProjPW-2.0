@@ -1,6 +1,5 @@
 <?php
 include('conexaoLoginCliente.php');
-include('js/main.js');
 
 
 if(isset($_POST['email']) || isset($_POST['senha'])) {
