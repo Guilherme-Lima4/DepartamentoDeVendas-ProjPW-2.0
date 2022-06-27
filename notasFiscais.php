@@ -1,3 +1,9 @@
+<?php
+
+include('protect.php');
+
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>

@@ -1,0 +1,30 @@
+table.tableVendas {
+    margin-top: 180px;
+    border-radius: 10px;
+    border-style: groove;
+    width:70%;
+}
+table {
+    border-collapse:collapse;
+}
+th {
+    background-color: #87CEEB;
+    border: 1px;
+    font: 15px Arial, sans-serif;
+    border-style: groove;
+    text-align: center;
+}
+tr {
+    border: 1px;
+    border-radius: 10px;
+    border-style: groove;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+}
+td {
+    border: 1px;
+    border-radius: 10px;
+    border-style: groove;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+}

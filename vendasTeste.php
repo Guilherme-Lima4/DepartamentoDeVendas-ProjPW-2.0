@@ -6,8 +6,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>Vendas</title>
+    <link rel="stylesheet" href="vendas.css" media="screen">
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="notasFiscais.css" media="screen">
+    <link rel="stylesheet" href="notasFiscais.css" media="screen">
     <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.12.14, nicepage.com">
@@ -56,40 +57,7 @@
         header("Content-type: text/html; charset=utf-8");
         include_once "conexaoLoginCliente.php";
 
-    echo "<style>
-            table.center {
-                margin-top: 180px;
-                border-radius: 10px;
-                border-style: groove;
-                width:70%;
-            }
-            table {
-                border-collapse:collapse;
-            }
-            th {
-                background-color: #87CEEB;
-                border: 1px;
-                font: 15px Arial, sans-serif;
-                border-style: groove;
-                text-align: center;
-            }
-            tr {
-                border: 1px;
-                border-radius: 10px;
-                border-style: groove;
-                text-align: center;
-                font: 15px Arial, sans-serif;
-            }
-            td {
-                border: 1px;
-                border-radius: 10px;
-                border-style: groove;
-                text-align: center;
-                font: 15px Arial, sans-serif;
-            }
-        
-        </style>";
-        echo "<center><table class= center border= 0px>";
+        echo "<center><table class='tableVendas' center border= 0px>";
         echo "<tr>";
         echo "<th>Id Venda</th>";
         echo "<th>Id Vendedor</th>";
