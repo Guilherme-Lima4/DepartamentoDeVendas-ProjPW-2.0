@@ -53,7 +53,6 @@
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-expanded-width u-table u-table-responsive u-table-1">
         <?php 
-        
         header("Content-type: text/html; charset=utf-8");
         include_once "conexaoLoginCliente.php";
 
@@ -124,7 +123,7 @@
             echo "<td>" . $qtdeProduto . "</td>";
             echo "<td>" . $valorProduto . "</td>";
             echo "<td><a href=''><img src='images/deleteee_crud.png' height='50' width='50' alt='Cancelar' title='Cancelar compra'></
-        a><a href=''><img src='images/insertt_crud.png' height='50' width='50' alt='Aprovar' title='Aprovar compra'></
+        a>&nbsp<a href=''><img src='images/insertt_crud.png' height='50' width='50' alt='Aprovar' title='Aprovar compra'></
         a>";
 
             echo "</tr>";
