@@ -29,7 +29,7 @@ if(isset($_POST['robo'])){
     $valorProduto = 1.555;
     $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
 
-    if (!mysqli_query($conn, $sql_code)) {
+    if (mysqli_query($conn, $sql_code)) {
         echo "<script type='text/javascript'>
                 alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página Notas fiscais');
                 location.replace('homeCliente.php');
@@ -47,7 +47,7 @@ if(isset($_POST['robo'])){
     $valorProduto = 1.255;
     $sql_code = "INSERT INTO venda (idVendedor, idCliente, produto, qtdProduto, valorProduto) VALUES ('1', '$id', '$produto', '$qtdProduto', '$valorProduto')";
 
-    if (!mysqli_query($conn, $sql_code)) {
+    if (mysqli_query($conn, $sql_code)) {
         echo "<script type='text/javascript'>
                 alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página Notas fiscais');
                 location.replace('homeCliente.php');

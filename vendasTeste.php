@@ -101,7 +101,7 @@
         echo "<th>Ações</th>";
         echo "</th>";
 
-        $sql = "SELECT * FROM vendas";
+        $sql = "SELECT * FROM venda";
         $resultado = mysqli_query($conn, $sql) or die("Erro ao retornar dados");
 
         echo "<CENTER>Vendas cadastradas na base de dados<br/></CENTER> ";
