@@ -92,9 +92,9 @@
         </style>";
         echo "<center><table class= center border= 0px>";
         echo "<tr>";
+        echo "<th>Id Venda</th>";
         echo "<th>Id Vendedor</th>";
         echo "<th>Id Cliente</th>";
-        echo "<th>Id Venda</th>";
         echo "<th>Produto</th>";
         echo "<th>Qtde Produto</th>";
         echo "<th>Valor Produto</th>";
@@ -104,8 +104,8 @@
         $sql = "SELECT * FROM venda";
         $resultado = mysqli_query($conn, $sql) or die("Erro ao retornar dados");
 
-        echo "<CENTER>Vendas cadastradas na base de dados<br/></CENTER> ";
-        echo "</br>";
+        echo "<h1 style='text-align:center'>Vendas cadastradas na base de dados</h1> ";
+        echo "<br>";
 
         while ($registro = mysqli_fetch_array($resultado)) {
 
