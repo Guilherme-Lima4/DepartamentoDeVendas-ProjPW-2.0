@@ -15,7 +15,7 @@ if(isset($_POST['robo'])){
         die("Erro ao comprar produto! " . mysqli_error($conn));
     } else {
         echo "<script type='javascript'>alert('Compra efetuada com sucesso! Aguarde a confirmação do vendedor e visualize a sua nota fiscal na página 'Notas fiscais'');";
-        header("Location: notasFiscais.php");
+        header("Location: notasFiscais.html");
         
     }
 
