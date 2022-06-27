@@ -104,8 +104,8 @@
         $sql = "SELECT * FROM venda";
         $resultado = mysqli_query($conn, $sql) or die("Erro ao retornar dados");
 
-        echo "<h1 style='text-align:center'>Vendas cadastradas na base de dados</h1> ";
-        echo "<br>";
+        #echo "<h1 style='text-align:center'>Vendas cadastradas na base de dados</h1> ";
+        #echo "<br>";
 
         while ($registro = mysqli_fetch_array($resultado)) {
 
