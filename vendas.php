@@ -16,6 +16,10 @@ include('conexaoLoginCliente.php');
     <link rel="stylesheet" href="vendas.css" media="screen">
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="notasFiscais.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	  <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
     <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.12.14, nicepage.com">
