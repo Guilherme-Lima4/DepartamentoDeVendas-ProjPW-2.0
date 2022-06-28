@@ -20,14 +20,12 @@ include('protect.php');
     $sql_code = "INSERT INTO notafiscal (idVendedor, idCliente, idProduto, qtdProduto, valorProduto) VALUES ('$idVendedor', '$idCliente', '$produto', '$qtdeProduto', '$valorProduto')";
 
     if (mysqli_query($conn, $sql_code)) { 
-       echo "<script type='text/javascript'>
-                alert('Compra aprovada! Nota Fiscal gerada para o Cliente');
-                location.replace('vendasTeste.php');
-             </script>";
-
         $sqlDelete = "DELETE FROM venda WHERE idVenda = '" . $idVenda . "'";   
         mysqli_query($conn, $sqlDelete);
-        
+        echo "<script type='text/javascript'>
+                alert('Compra aprovada! Nota Fiscal gerada para o Cliente');
+                location.replace('vendasTeste.php');
+              </script>";
 
     } else {
         die("Erro ao aprovar compra!" . mysqli_error($conn));        
