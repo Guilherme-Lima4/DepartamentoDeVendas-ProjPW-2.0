@@ -3,8 +3,14 @@
 include('conexaoLoginCliente.php');
 include('protect.php');
 
+if (isset($_GET['id'])) {
+    #criando uma variavel para armazenar o valor obtido do GET
+    $id = $_GET['id'];
+}
+
     $sql = "SELECT * FROM venda";
     $resultado = mysqli_query($conn, $sql) or die("Erro ao retornar dados");
+    
     
     while ($registro = mysqli_fetch_array($resultado)) {
 
@@ -20,7 +26,7 @@ include('protect.php');
     $sql_code = "INSERT INTO notafiscal (idVendedor, idCliente, idProduto, qtdProduto, valorProduto) VALUES ('$idVendedor', '$idCliente', '$produto', '$qtdeProduto', '$valorProduto')";
 
     if (mysqli_query($conn, $sql_code)) { 
-        $sqlDelete = "DELETE FROM venda WHERE idVenda = '" . $idVenda . "'";   
+        $sqlDelete = "DELETE FROM venda WHERE idVenda = '" . $id . "'";   
         if(mysqli_query($conn, $sqlDelete)) {
         echo "<script type='text/javascript'>
                 alert('Compra aprovada! Nota Fiscal gerada para o Cliente');
