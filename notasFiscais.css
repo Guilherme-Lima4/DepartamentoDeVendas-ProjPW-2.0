@@ -27,5 +27,7 @@
   background-color: #333333;
   color: white;
   margin-inline-start: auto;
-  margin-bottom: 0%;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
 }
