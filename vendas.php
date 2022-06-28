@@ -1,3 +1,10 @@
+<?php
+
+include('protect.php');
+include('conexaoLoginCliente.php');
+
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -6,8 +13,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>Vendas</title>
+    <link rel="stylesheet" href="vendas.css" media="screen">
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="notasFiscais.css" media="screen">
+    <link rel="stylesheet" href="notasFiscais.css" media="screen">
     <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.12.14, nicepage.com">
@@ -19,15 +27,17 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/PortaldoCliente2.png"
+		"logo": "images/logo.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="notasFiscais">
     <meta property="og:type" content="website">
   </head>
-  <body class="u-body u-xl-mode"><header class="u-clearfix u-grey-75 u-header u-header" id="sec-9b3c"><div class="u-clearfix u-sheet u-sheet-1">
+  <body class="u-body u-xl-mode">
+    <header class="u-clearfix u-grey-75 u-header u-header" id="sec-9b3c">
+        <div class="u-clearfix u-sheet u-sheet-1">
         <a href="homeVendedor.php" class="u-image u-logo u-image-1" data-image-width="500" data-image-height="500">
-          <img src="images/logo.png.png" class="u-logo-image u-logo-image-1">
+          <img src="images/logo.png" class="u-logo-image u-logo-image-1">
         </a>
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
@@ -49,66 +59,56 @@
           </div>
         </div>
       </div></header>
-    <section class="u-align-center u-clearfix u-section-1" id="sec-f729">
+      <section class="u-align-center u-clearfix u-section-1" id="sec-f730">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-expanded-width u-table u-table-responsive u-table-1">
-          <table class="u-table-entity u-table-entity-1">
-            <colgroup>
-              <col width="20%">
-              <col width="20%">
-              <col width="20%">
-              <col width="20%">
-              <col width="20%">
-            </colgroup>
-            <thead class="u-black u-table-header u-table-header-1">
-              <tr style="height: 21px;">
-                <th class="u-border-1 u-border-black u-table-cell">Id Vendedor</th>
-                <th class="u-border-1 u-border-black u-table-cell">Id Cliente</th>
-                <th class="u-border-1 u-border-black u-table-cell">Id Venda</th>
-                <th class="u-border-1 u-border-black u-table-cell">Produto</th>
-                <th class="u-border-1 u-border-black u-table-cell">Qtde Produto</th>
-                <th class="u-border-1 u-border-black u-table-cell">Valor Produto</th>
-              </tr>
-            </thead>
-            <tbody class="u-table-body">
-              <tr style="height: 75px;">
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-              </tr>
-              <tr style="height: 76px;">
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-              </tr>
-              <tr style="height: 76px;">
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-              </tr>
-              <tr style="height: 76px;">
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-30 u-table-cell"></td>
-              </tr>
-            </tbody>
-          </table>
+        <?php 
+        header("Content-type: text/html; charset=utf-8");
+        
+
+        echo "<center><table class='tableVendas' center border= 0px>";
+        echo "<tr>";
+        echo "<th>Id Venda</th>";
+        echo "<th>Id Vendedor</th>";
+        echo "<th>Id Cliente</th>";
+        echo "<th>Produto</th>";
+        echo "<th>Qtde Produto</th>";
+        echo "<th>Valor Produto</th>";
+        echo "<th>Ações</th>";
+        echo "</th>";
+
+        $sql = "SELECT * FROM venda";
+        $resultado = mysqli_query($conn, $sql) or die("Erro ao retornar dados");
+
+        #echo "<h1 style='text-align:center'>Vendas cadastradas na base de dados</h1> ";
+        #echo "<br>";
+
+        while ($registro = mysqli_fetch_array($resultado)) {
+
+            $idVenda = $registro['idVenda'];
+            $idVendedor = $registro['idVendedor'];
+            $idCliente = $registro['idCliente']; 
+            $produto = $registro['produto'];
+            $qtdeProduto = $registro['qtdProduto'];
+            $valorProduto = $registro['valorProduto'];
+
+            echo "<tr>";
+            echo "<td>" . $idVenda . "</td>";
+            echo "<td>" . $idVendedor . "</td>";
+            echo "<td>" . $idCliente . "</td>";
+            echo "<td>" . $produto . "</td>";
+            echo "<td>" . $qtdeProduto . "</td>";
+            echo "<td>" . $valorProduto . "</td>";
+            echo "<td><a href='cancelaVenda.php?id=$idVenda'><img src='images/deleteee_crud.png' height='50' width='50' alt='Cancelar' title='Cancelar compra'></
+        a>&nbsp;&nbsp<a href='aprovaCompra.php?id=$idVenda'><img src='images/insertt_crud.png' height='50' width='50' alt='Aprovar' title='Aprovar compra'></
+        a>";
+
+            echo "</tr>";
+        }
+        ?>
+
         </div>
       </div>
     </section>
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-278a"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1"> FastDelivery© 2022&nbsp;<a href="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Privacy Policy</a>
-        </p>
-      </div></footer>
   </body>
 </html>
