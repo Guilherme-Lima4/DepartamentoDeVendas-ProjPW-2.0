@@ -115,6 +115,5 @@ include('conexaoLoginCliente.php');
         <p> FastDelivery© 2022&nbsp;<a href="" >Privacy Policy</a>
         </p>
     </footer>
-    </footer>
   </body>
 </html>
