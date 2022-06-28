@@ -17,7 +17,7 @@ include('protect.php');
 
     }
 
-    $sql_code = "INSERT INTO notasFiscais (idVendedor, idCliente, idProduto, qtdProduto, valorProduto) VALUES ('$idVendedor', '$idCliente', '$produto', '$qtdeProduto', '$valorProduto')";
+    $sql_code = "INSERT INTO notafiscal (idVendedor, idCliente, idProduto, qtdProduto, valorProduto) VALUES ('$idVendedor', '$idCliente', '$produto', '$qtdeProduto', '$valorProduto')";
 
     if (mysqli_query($conn, $sql_code)) { 
        echo "<script type='text/javascript'>
