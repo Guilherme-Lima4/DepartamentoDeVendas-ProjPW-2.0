@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
         if(mysqli_query($conn, $sqlDelete)) {
         echo "<script type='text/javascript'>
                 alert('Compra aprovada! Nota Fiscal gerada para o Cliente');
-                location.replace('vendasTeste.php');
+                location.replace('vendas.php');
               </script>";
         } else {
             die("Erro ao aprovar compra!" . mysqli_error($conn));        

@@ -90,7 +90,7 @@ include('conexaoLoginCliente.php');
             $idNotaFiscal = $registro['idNotaFiscal'];
             $idVendedor = $registro['idVendedor'];
             $idCliente = $registro['idCliente']; 
-            $produto = $registro['produto'];
+            $produto = $registro['idProduto'];
             $qtdeProduto = $registro['qtdProduto'];
             $valorProduto = $registro['valorProduto'];
 
