@@ -100,7 +100,7 @@ include('conexaoLoginCliente.php');
             echo "<td>" . $qtdeProduto . "</td>";
             echo "<td>" . $valorProduto . "</td>";
             echo "<td><a href=''><img src='images/deleteee_crud.png' height='50' width='50' alt='Cancelar' title='Cancelar compra'></
-        a>&nbsp;&nbsp<a href=''><img src='images/insertt_crud.png' height='50' width='50' alt='Aprovar' title='Aprovar compra'></
+        a>&nbsp;&nbsp<a href='aprovaCompra.php'><img src='images/insertt_crud.png' height='50' width='50' alt='Aprovar' title='Aprovar compra'></
         a>";
 
             echo "</tr>";
