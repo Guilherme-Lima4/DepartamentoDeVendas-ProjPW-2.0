@@ -52,7 +52,7 @@ include('protect.php');
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
-                <a href="perfil.php" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">Informaçoes pessoais</a>    
+                <a href="perfil.php" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">Perfil</a>    
               </div>
               &nbsp;<button type="button" formaction="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i></button>
             </div>
