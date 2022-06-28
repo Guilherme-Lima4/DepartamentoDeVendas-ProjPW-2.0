@@ -26,4 +26,6 @@
   text-align: center;
   background-color: #333333;
   color: white;
+  margin-inline-start: auto;
+  margin-bottom: 0%;
 }

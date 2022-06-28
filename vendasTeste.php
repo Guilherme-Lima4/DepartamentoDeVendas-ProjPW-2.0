@@ -110,12 +110,9 @@ include('conexaoLoginCliente.php');
         </div>
       </div>
     </section>
-    <footer id="sec-278a"><div class="u-clearfix u-sheet u-sheet-1">
+    <footer id="sec-278a">
         <p class="u-small-text u-text u-text-variant u-text-1"> FastDelivery© 2022&nbsp;<a href="" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Privacy Policy</a>
         </p>
-      </div></footer>
-      <footer class="rodape">
-      FastDelivery© Privacy Policy
-      </footer>
+    </footer>
   </body>
 </html>
