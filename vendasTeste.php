@@ -58,8 +58,8 @@ include('conexaoLoginCliente.php');
         </div>
       </div></header>
       <section class="u-align-center u-clearfix u-section-1" id="sec-f729">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-expanded-width u-table u-table-responsive u-table-1">
+      <!--<div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-expanded-width u-table u-table-responsive u-table-1">-->
         <?php 
         header("Content-type: text/html; charset=utf-8");
         
@@ -105,8 +105,8 @@ include('conexaoLoginCliente.php');
         }
         ?>
 
-        </div>
-      </div>
+        <!--</div>
+      </div>-->
     </section>
     
     
