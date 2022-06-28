@@ -55,9 +55,7 @@ include('protect.php');
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
                 <a href="veiculos.php" class="u-btn u-btn-round u-button-style u-custom-item u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-3">Veículos</a>
               </div>
-              <br>
-              <br>
-              <a href="logout.php" class="Logout">Logout</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="logout" href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>

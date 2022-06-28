@@ -16,6 +16,12 @@
   background-image: none;
 }
 
-
+.logout {
+  font-size: 50px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
 
 
