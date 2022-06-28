@@ -19,3 +19,11 @@
 #sec-f729 {
   margin-top: -100px;
 }
+
+#sec-278a {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
