@@ -3,8 +3,6 @@
 include('conexaoLoginCliente.php');
 include('protect.php');
 
-if(isset($_POST['robo'])){
-
     $sql = "SELECT * FROM venda";
     $resultado = mysqli_query($conn, $sql) or die("Erro ao retornar dados");
     
@@ -34,6 +32,5 @@ if(isset($_POST['robo'])){
     } else {
         die("Erro ao aprovar compra!" . mysqli_error($conn));        
     }
-
-} 
+ 
 ?>
